@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About page of Hope For All Bible Website" />
+  <title>Hope For All Bible Website— About</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; color: #333; }
+       h1 {text-align:center}
+    header, footer { background: rgb(148, 198, 240); color: #fff; padding: 16px; }
+    nav ul { display: flex; gap: 16px; list-style: none; padding: 0; margin: 8px 0 0; justify-content: center }
+    nav a { color: #fff; text-decoration: none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; max-width: 900px; margin: auto; }
+    section { margin-bottom: 32px; }
+    h3 { color: #2c7a6b; border-bottom: 2px solid rgb(148, 198, 240); display: inline-block; margin-bottom: 10px; }
+    .mission-item { margin-bottom: 15px; }
+      </style>
+</head>
+<body>
+  <header>
+    <h1>Hope For All</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html" aria-current="page">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <div style="background: rgb(148, 198, 240); color: rgb(43, 37, 37); padding: 20px; border-radius: 8px;">
+        <h2 style="margin-top: 0;">About Us</h2>
+        <p>Our story, mission, and values.</p>
+      </div>
+    </section>
+
+
+    <section>
+      <h3>Who We Are</h3>
+      <p>
+        We are a dedicated group of believers and community leaders committed to making the Word of God accessible to everyone.
+        <strong>Hope For All</strong> is more than just a website; it is a digital sanctuary designed for seekers, students of the Bible,
+        and anyone in need of a spiritual lift. We leverage modern technology to share timeless truths, ensuring that the message
+        of hope reaches people wherever they are.
+      </p>
+    </section>
+           
+    <section>
+      <h3>Our Mission</h3>
+      <p>Our main purpose is to provide <strong>instant spiritual relief</strong>. We understand that when you are sad, lonely, or overwhelmed, you don't want to flip through hundreds of pages—you need a word of hope now.</p>
+     
+      <div class="mission-item">
+        <strong>Search & Find:</strong> Simply type how you feel—be it "sad," "anxious," or "lost"—and <em>boom</em>: the exact scripture you need appears instantly.
+      </div>
+      <div class="mission-item">
+        <strong>Empowerment:</strong> To turn moments of weakness into moments of faith through accessible truth.
+      </div>
+      <div class="mission-item">
+        <strong>Accessibility:</strong> Making sure that no matter where you are, a "pocket of peace" is only one search away.
+      </div>
+    </section>
+
+
+    <section>
+      <h3>Timeline</h3>
+      <ul>
+        <li><strong>2024:</strong> Project started with a vision to make the Bible a "First Aid Kit" for emotions.</li>
+        <li><strong>2025:</strong> Launched our core "Search-by-Emotion" feature to help users find instant comfort.</li>
+        <li><strong>2026:</strong> Expanding our database to include more specific life situations and guided reflections.</li>
+      </ul>
+    </section>
+
+
+    <section class="highlight-box">
+     </section>
+  </main>
+
+
+  <footer>
+     <p>© <span id="year"></span> Hope For All - Bible Website. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

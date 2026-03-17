@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Hope For All Bible Website" />
+  <title>Hope For All Bible Website— Home</title>
+  <style>
+   
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    h1, h2, h3, p { text-align: center; }
+
+
+    header, footer {
+      background: rgb(148, 198, 240);
+      color: #fff;
+      padding: 16px;
+    }
+
+
+   
+    main {
+      padding: 24px;
+      flex: 1;
+    }
+
+
+    nav ul {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+      justify-content: center;
+    }
+
+
+    nav a { color: #fff; text-decoration: none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+
+
+    .hero {
+      background: #f3fff7;
+      padding: 24px;
+      border: 1px solid #d8f5e5;
+      border-radius: 8px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 24px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hope For All</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="Home.html" aria-current="page">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Hope For All- Bible Website</h2>
+      <p>We provide different verses that is applicable to your mood and current life situation. Pick what you feel. Get verses that meet you there.</p>
+      <p><a href="services.html" style="color: #66b3ff; font-weight: bold;">Explore our provided services →</a></p>
+    </section>
+
+
+    <section>
+      <h2 style="margin-top: 40px;">Sample Verses</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fear</h3>
+          <p>Psalm 56:3 – "When I am afraid, I put my trust in you."</p>
+        </article>
+        <article class="card">
+          <h3>Joy</h3>
+          <p>Nehemiah 8:10 – "Do not grieve, for the joy of the Lord is your strength."</p>
+        </article>
+        <article class="card">
+          <h3>Sad</h3>
+          <p>Matthew 5:4 – "Blessed are those who mourn, for they will be comforted."</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>© <span id="year"></span> Hope For All-Bible Website. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
